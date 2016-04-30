@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>List of {{name}}!</h1>        
+          <div ng-repeat="movie in response.moviesData.BookMyShow.arrEvents">
+            <div class="col-md-3" ng-repeat="event in movie.ChildEvents">
+              <img src="https://in.bmscdn.com/events/moviecard/{{event.EventCode}}.jpg" alt="">
+              <h2>{{event.EventName}}</h2><span>({{event.EventLanguage}})</span>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
